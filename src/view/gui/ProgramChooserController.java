@@ -288,8 +288,28 @@ public class ProgramChooserController {
                         )
                 )
         );
+        IStmt ex8 = new CompStmt(
+                new VarDeclStmt("v", new IntType()),
+                new CompStmt(new VarDeclStmt("x", new IntType()),
+                        new CompStmt(new VarDeclStmt("y", new IntType()),
+                                new CompStmt(new AssignStmt("v", new ConstantValue(new IntValue(0))),
+                                        new CompStmt(new RepeatUntilStmt(
+                                                new CompStmt(new ForkStmt(
+                                                        new CompStmt(new PrintStmt(new VariableExp("v")),
+                                                                new AssignStmt("v", new ArithExp('-', new VariableExp("v"), new ConstantValue(new IntValue(1))))
+                                                        )),
+                                                        new AssignStmt("v", new ArithExp('+', new VariableExp("v"), new ConstantValue(new IntValue(1))))),
+                                                new RelationalExp("==", new VariableExp("v"), new ConstantValue(new IntValue(3)))
+                                        ),
+                                                new CompStmt(new AssignStmt("x", new ConstantValue(new IntValue(1))),
+                                                        new CompStmt(new NoOPStmt(),
+                                                                new CompStmt(new AssignStmt("y", new ConstantValue(new IntValue(3))),
+                                                                        new CompStmt(new NoOPStmt(),
+                                                                                new PrintStmt(new ArithExp('*', new VariableExp("v"), new ConstantValue(new IntValue(10))))
+                                                                        ))))))))
+        );
 
-        return List.of(ex1, ex2, ex3, ex4, ex5, ex6, exFork);
+        return List.of(ex1, ex2, ex3, ex4, ex5, ex6, exFork,ex8);
     }
 
     @FXML
