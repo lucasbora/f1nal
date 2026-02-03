@@ -1,0 +1,696 @@
+Program ID: 4
+ExeStack:
+   (Int v;(Ref(Int) a;(v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   Int v
+   (Ref(Int) a;(v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   (Ref(Int) a;(v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))))
+SymTable:
+   v --> 0
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   Ref(Int) a
+   (v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))
+SymTable:
+   v --> 0
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   (v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))
+SymTable:
+   a --> (0, Int)
+   v --> 0
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   v = 10
+   (new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))
+SymTable:
+   a --> (0, Int)
+   v --> 0
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   (new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))
+SymTable:
+   a --> (0, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   new(a, 22)
+   (fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))
+SymTable:
+   a --> (0, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   (fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 4
+ExeStack:
+   fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))))
+   (print(v);print(rH(a)))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 4
+ExeStack:
+   (print(v);print(rH(a)))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 5
+ExeStack:
+   (wH(a, 30);(v = 32;(print(v);print(rH(a)))))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 4
+ExeStack:
+   print(v)
+   print(rH(a))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 5
+ExeStack:
+   wH(a, 30)
+   (v = 32;(print(v);print(rH(a))))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 4
+ExeStack:
+   print(rH(a))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+   10
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   (v = 32;(print(v);print(rH(a))))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+   10
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   v = 32
+   (print(v);print(rH(a)))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+   10
+   30
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   (print(v);print(rH(a)))
+SymTable:
+   a --> (1, Int)
+   v --> 32
+Out:
+   10
+   30
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   print(v)
+   print(rH(a))
+SymTable:
+   a --> (1, Int)
+   v --> 32
+Out:
+   10
+   30
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   print(rH(a))
+SymTable:
+   a --> (1, Int)
+   v --> 32
+Out:
+   10
+   30
+   32
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 4
+ExeStack:
+   (Int v;(Ref(Int) a;(v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   Int v
+   (Ref(Int) a;(v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   Int v
+   (Ref(Int) a;(v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   (Ref(Int) a;(v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))))
+SymTable:
+   v --> 0
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   (Ref(Int) a;(v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))))
+SymTable:
+   v --> 0
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   Ref(Int) a
+   (v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))
+SymTable:
+   v --> 0
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   Ref(Int) a
+   (v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))
+SymTable:
+   v --> 0
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   (v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))
+SymTable:
+   a --> (0, Int)
+   v --> 0
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   (v = 10;(new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))
+SymTable:
+   a --> (0, Int)
+   v --> 0
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   v = 10
+   (new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))
+SymTable:
+   a --> (0, Int)
+   v --> 0
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   v = 10
+   (new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))
+SymTable:
+   a --> (0, Int)
+   v --> 0
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   (new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))
+SymTable:
+   a --> (0, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   (new(a, 22);(fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))
+SymTable:
+   a --> (0, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   new(a, 22)
+   (fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))
+SymTable:
+   a --> (0, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   new(a, 22)
+   (fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))
+SymTable:
+   a --> (0, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+----------------------------------
+Program ID: 4
+ExeStack:
+   (fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 4
+ExeStack:
+   (fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))));(print(v);print(rH(a))))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 4
+ExeStack:
+   fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))))
+   (print(v);print(rH(a)))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 4
+ExeStack:
+   fork((wH(a, 30);(v = 32;(print(v);print(rH(a))))))
+   (print(v);print(rH(a)))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 4
+ExeStack:
+   (print(v);print(rH(a)))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 5
+ExeStack:
+   (wH(a, 30);(v = 32;(print(v);print(rH(a)))))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 4
+ExeStack:
+   (print(v);print(rH(a)))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 5
+ExeStack:
+   (wH(a, 30);(v = 32;(print(v);print(rH(a)))))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 4
+ExeStack:
+   print(v)
+   print(rH(a))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 5
+ExeStack:
+   wH(a, 30)
+   (v = 32;(print(v);print(rH(a))))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 4
+ExeStack:
+   print(v)
+   print(rH(a))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 5
+ExeStack:
+   wH(a, 30)
+   (v = 32;(print(v);print(rH(a))))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+FileTable:
+Heap:
+   1 --> 22
+----------------------------------
+Program ID: 4
+ExeStack:
+   print(rH(a))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+   10
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   (v = 32;(print(v);print(rH(a))))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+   10
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 4
+ExeStack:
+   print(rH(a))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+   10
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   (v = 32;(print(v);print(rH(a))))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+   10
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 4
+ExeStack:
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+   10
+   30
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   v = 32
+   (print(v);print(rH(a)))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+   10
+   30
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   v = 32
+   (print(v);print(rH(a)))
+SymTable:
+   a --> (1, Int)
+   v --> 10
+Out:
+   10
+   30
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   (print(v);print(rH(a)))
+SymTable:
+   a --> (1, Int)
+   v --> 32
+Out:
+   10
+   30
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   (print(v);print(rH(a)))
+SymTable:
+   a --> (1, Int)
+   v --> 32
+Out:
+   10
+   30
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   print(v)
+   print(rH(a))
+SymTable:
+   a --> (1, Int)
+   v --> 32
+Out:
+   10
+   30
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   print(v)
+   print(rH(a))
+SymTable:
+   a --> (1, Int)
+   v --> 32
+Out:
+   10
+   30
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   print(rH(a))
+SymTable:
+   a --> (1, Int)
+   v --> 32
+Out:
+   10
+   30
+   32
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+   print(rH(a))
+SymTable:
+   a --> (1, Int)
+   v --> 32
+Out:
+   10
+   30
+   32
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------
+Program ID: 5
+ExeStack:
+SymTable:
+   a --> (1, Int)
+   v --> 32
+Out:
+   10
+   30
+   32
+   30
+FileTable:
+Heap:
+   1 --> 30
+----------------------------------

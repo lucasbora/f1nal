@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane
+        xmlns="http://javafx.com/javafx/17"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="view.gui.InterpreterController">
+
+    <top>
+        <HBox spacing="10">
+            <Label text="PrgStates:"/>
+            <TextField fx:id="nrPrgStates" editable="false"/>
+            <Button text="Run one step" onAction="#handleRunOneStep"/>
+        </HBox>
+    </top>
+
+    <center>
+        <SplitPane>
+
+            <VBox>
+                <Label text="Heap"/>
+                <TableView fx:id="heapTable">
+                    <columns>
+                        <TableColumn fx:id="heapAddrCol" text="Address"/>
+                        <TableColumn fx:id="heapValCol" text="Value"/>
+                    </columns>
+                </TableView>
+            </VBox>
+
+            <VBox>
+                <Label text="Output"/>
+                <ListView fx:id="outList"/>
+            </VBox>
+
+            <VBox>
+                <Label text="Program IDs"/>
+                <ListView fx:id="prgIdList"/>
+            </VBox>
+
+            <VBox>
+                <Label text="SymTable"/>
+                <TableView fx:id="symTable">
+                    <columns>
+                        <TableColumn fx:id="symVarCol" text="Variable"/>
+                        <TableColumn fx:id="symValCol" text="Value"/>
+                    </columns>
+                </TableView>
+            </VBox>
+
+            <VBox>
+                <Label text="ExeStack"/>
+                <ListView fx:id="exeStackList"/>
+            </VBox>
+
+        </SplitPane>
+    </center>
+
+</BorderPane>

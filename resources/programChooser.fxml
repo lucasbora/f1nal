@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.gui.ProgramChooserController">
+
+    <Label text="Select a program"/>
+
+    <ListView fx:id="programList" prefWidth="500"/>
+
+    <Button text="Select program" onAction="#handleSelect"/>
+
+</VBox>
